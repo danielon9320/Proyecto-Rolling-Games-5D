@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #C7C7C7;
+    overflow-x: hidden;
+}
+
+
+/*NAVBAR*/
+#logo{
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+#logo img{
+    margin-left: 50px;
+}
+
+.fondo-nav{
+    background-color: rgb(05,05,05);
+}
+
+.navbar-completa{
+    position: fixed;
+    top: 0px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* Opciones NavBar*/
+#bacercade{
+    font-size: 20px;
+    width: 180px;
+    background-color: #FE7B68;
+    border: none;
+    height: 100%;
+}
+
+#bacercade:hover{
+    background-color: #ff8976;
+}
+
+.acercade{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link{
+    font-size: 20px;
+    color:rgb(200,200,200,0.70);
+    background-color: rgb(05,05,05);
+    width: 80px;
+    border-style: none;
+}
+
+.nav-link:hover{
+    color:rgb(200,200,200,0.98);
+}
+
+.divider{
+    width: 2px;
+    margin-left: -20px;
+    font-size: 22px;
+    background-color: rgb(25,25,25);
+}
+
+.compensate{
+    height: 46px;
+}
+
+
+/* SLIDER */
+#childoflight{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 48px;
+    margin-top: -14px;
+}
+
+#videos{
+    background-color: black;
+}
+
+#detfet{
+    margin-top: -8px;
+    margin-bottom: -2px;
+}
+
+#demolitionderby{
+    font-family: 'Bahiana', cursive;
+    font-size: 52px;
+    margin-top: -14px;
+}
+
+#farcry4{
+    font-family: 'Anton', sans-serif;
+    font-size: 78px;
+    margin-top: -14px;
+}
+
+
+/*BARRA IZQUIERDA*/
+.fila{
+    margin-bottom: 60px;
+}
+
+#opciones{
+    background-color: #FE7B68;
+    border: 0px;
+    margin-bottom: 5px;
+    width: 12rem;
+    height: 10rem;
+    display: inline-block;
+}
+
+#opciones h4{
+    color: black;
+    font-size: 28px;
+}
+
+#opciones :hover{
+    background-color: #ff8976;
+}
+
+
+/*VENTANA DERECHA*/
+.frameJuego{
+    border: 0px;
+    height: 700px;
+    width: 114%;
+}
+
+#overflow::-webkit-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.compensiframe{
+    margin-left: -48px;
+}
+
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*JUEGOS*/
+#fondoproductos{
+    background-color: #DBDBDA;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#publicacion{
+    margin-right: 30px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: #262626;
+}
+
+#infogame{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+    line-height : 20px;
+    color: #FFFFFF;
+    margin-bottom: -4px;
+}
+
+#cardtitle{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+#subtit{
+    font-family: 'Bebas Neue', cursive;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+#iconos{
+    color:white;
+}
+
+#total-display{
+    flex-wrap: wrap;
+}
+
+#bcompra{
+    font-size: 20px;
+    width: 116px;
+    background-color: #FE7B68;
+    border: 0px;
+    height: 40px;
+}
+
+
+/* FOOTER */
+#fbar{
+    margin-bottom: -2px;
+}
+
+#footer{
+    margin-top: -32px;
+}
+
+/* ADMIN */
+thead{
+    background-color: #FE7B68;
+    font-size: 18px;
+}
+
+.compJuegos{
+    width: 62px;
+    height: 60px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+/*MODAL LOGIN*/
+#botonesModal{
+    border: none;
+    background-color: #FE7B68;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#invertir{
+    filter: invert(100%);
+}
+
+input{ 
+    font-family: FontAwesome, 'Fira Sans Condensed', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: black;
+}
+
+textarea{ 
+    font-family: FontAwesome, 'Fira Sans Condensed', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: black;
+}
+
+.iconosModal{
+    font-size: 40px;
+    color: #FE7B68;
+}
+.iconosModal:hover{
+    color: #ff8976;
+}
+
+
+/*ERROR404*/
+.e404{
+    background-color: #FE7B68;
+    height: 90px;
+}
+
+
+/*Contacto*/
+#fondoSN{
+    background-color: #262626;
+}
+
+/*Sobre Nos*/
+#fondoSN{
+    background-color: #262626;
+}
+
+#sobrenos{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: -30px;
+}
+
+#sobrenos strong{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: -30px;
+}
+
+#colorIntegrantes{
+    background-color: #262626;
+}
+
+.cardP{
+    border: none;
+    height: 34rem;
+}
+
+.carr{
+    width: 700px;
+    height: 357px;
+}
+
+@media all and (min-width: 601px) and (max-width: 767px){
+    .frameJuego{
+        display: none;
+    }
+}

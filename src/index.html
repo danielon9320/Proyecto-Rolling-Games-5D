@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Comisión 5D - Rolling Code School">
+    <meta name="keywords" content="games, videojuegos, videogames, juegos,esports">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bahiana&family=Grenze+Gotisch:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/navbar/favicon.ico" type="image/gif" sizes="16x16"> 
+    <script src="https://kit.fontawesome.com/3752e260bd.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_Hx6c8onKholrsr7wLCKP4");
+        })();
+    </script>
+    <title>Rolling Games</title>
+</head>
+
+<body id ="overflow">
+    <header>
+        <!-- NAVBAR -->
+        <nav class="vab navbar navbar-dark navbar-expand-lg fixed-top fondo-nav">
+            <a class="navbar-brand ml-4 mb-1 mt-1" href="Index.html"><img src="img/navbar/Game_Development-512.png" alt="logo de la pagina" width="160vw"></a>
+            <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item ml-1">
+                    <a href="sobreNos.html"><button id="bacercade">Acerca de Nosotros</button></a>
+                </li>
+                <li class="nav-item ml-1">
+                    <a href="contacto.html"><button id="bacercade">Contacto</button></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2" id="login">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalRegistro">Registro</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+          </nav>
+    </header>
+    <!-- SLIDER -->
+    <section >
+        <div class="compensate"></div>
+        <div id="carouselExampleCaptionsj" class="carousel slide d-none d-sm-block" data-ride="carousel">
+            <div class="carousel-inner" id="principales">
+              
+                
+               
+            </div>
+            <!-- Controles -->
+            <a class="carousel-control-prev" href="#carouselExampleCaptionsj" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptionsj" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </section>
+    <!-- AQUI COMIENZA EL SITIO -->
+    <div class="row" id="total-display">
+        <!-- DISTRIBUCION COLUMNA IZQUIERDA -->
+        <div class="col-sm-12 col-md-3 col-lg-2">
+            <!-- COLUMNA IZQUIERDA -->
+            <h2 class="mt-5 text-center">CATEGORIAS</h2>
+            <div class="fila text-center">
+                <div class="col" id="opciones" role="group">
+                    <button class="row" type="button" id="opciones" onclick="cambioRPG()">
+                        <img class="mt-2" src="img/categories/rpg.png" alt="RPG" width="100px">
+                        <h4 class="mt-2 mb-4">RPG</h3>
+                    </button>
+                    <button class="row" type="button" id="opciones" onclick="cambioFutbol()">
+                        <img class="mt-2" src="img/categories/futbol.png" alt="Futbol" width="100px">
+                        <h4 class="mt-2 mb-4">Futbol</h4>
+                    </button>
+                    <button class="row" type="button" id="opciones" onclick="cambioCarreras()">
+                        <img class="mt-2" src="img/categories/carreras.png" alt="Carreras" width="100px">
+                        <h4 class="mt-2 mb-4">Carreras</h4>
+                    </button>
+                    <button class="row" type="button" id="opciones" onclick="cambioOnline()">
+                        <img class="mt-2" src="img/categories/online.png" alt="Online" width="100px">
+                        <h4 class="mt-2 mb-4">Online</h4>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- COLUMNA DERECHA -->
+        <div class="mt-5 col-sm-12 col-md-8 col-lg-9" id="cartasJuegos">
+            <iframe src="carreras.html" class="frameJuego"></iframe>
+        </div>
+    </div>
+
+    <div class="compensate"></div>
+    <!-- AQUI COMIENZA EL FOOTER -->
+    <footer class="fondo-nav text-light py-4 absolute-bottom">
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 text-center mt-4">
+                    <p id="fbar">Para mas información:</p>
+                    <a href="e404.html" target="_blank"><i class="fab fa-facebook fa-2x mr-2" id="iconos"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5403815491020 " target="_blank"><i
+                            class="fab fa-whatsapp fa-2x mr-2" id="iconos"></i></a>
+                    <a href="e404.html"><i class="fab fa-instagram fa-2x mr-2" target="_blank" id="iconos"></i></a>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                    
+                </div>
+                <div class="col sm-12 col-md-4 col-lg-4 text-center mt-4">
+                    <div>
+                        <p class="ml-5">Powered by</p>
+                        <a href="https://rollingcodeschool.com/" target="_blank"><img id="footer" class="w-50"
+                                src="img/footer/footer.png" alt="logo de RC"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!--MODAL LOGIN-->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header fondo-nav">
+                    <a class="navbar-brand"><img src="img/navbar/Game_Development-512.png" alt="Rolling Games"
+                            width="160px"></a>
+                    <button type="button" id="invertir" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="formularioLogin" onsubmit="login(event)">
+                        <div class="row">
+                            <h3 class="px-4 mr-auto">LOGIN</h3>
+                            <a href="#" data-toggle="modal" data-target="#modalRegistro" data-dismiss="modal"
+                                aria-label="Close" class="text-dark lead ml-auto px-4">Registrarse</a>
+                        </div>
+                        <div class="form-group rounded mb-3">
+                            <input type="email" placeholder="&#xf0e0;  Correo electrónico" required
+                                class="form-control inputModales" id="mailLogin" onblur="revisarMail(this)">
+                                <div class="invalid-feedback">
+                                    Direccion invalida
+                                </div>
+                        </div>
+                        <div class="form-group rounded my-3">
+                            <input type="password" placeholder="&#xf023;  Contraseña" required class="form-control inputModales" id="passLogin" onblur="revisarLongitud(this)">
+                            <div class="invalid-feedback">
+                                Contraseña invalida
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group form-check pl-5 mr-auto">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                            </div>
+                            <div class="px-4 ml-auto">
+                                <a href="#" data-toggle="modal" data-target="#modalRecuperar" data-dismiss="modal"
+                                    aria-label="Close" class="text-dark">¿Olvidaste tu contraseña?</a>
+                            </div>
+                        </div>
+                        <div class="float-right">
+                            <button type="submit" class="btn" id="bcompra">Ingresar</button>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                        <p class="lead text-center">O ingresa con:</p>
+                        <div class="d-flex justify-content-around pb-3 mb-2">
+                            <a href="e404.html"><i class="fab fa-facebook iconosModal"></i></a>
+                            <a href="e404.html"><i class="fab fa-xbox iconosModal"></i></a>
+                            <a href="e404.html"><i class="fab fa-playstation iconosModal"></i></a>
+                            <a href="e404.html"><i class="fab fa-twitch iconosModal"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL RECUPERAR CONTRASEÑA-->
+    <div class="modal fade" id="modalRecuperar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header fondo-nav">
+                    <a class="navbar-brand"><img src="img/navbar/Game_Development-512.png" alt="Mercado Minero"
+                            width="260"></a>
+                    <button type="button" id="invertir" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <label class="lead text-center">Ingresa tu correo electrónico, te enviaremos un paso a paso 
+                                para recuperar
+                                tu contraseña!</label>
+                            <div class="form-group rounded mb-3">
+                                <input type="email" placeholder="&#xf0e0;  Correo electrónico" required
+                                    class="form-control inputModales" onblur="revisarMail(this)">
+                                    <div class="invalid-feedback">
+                                        Formato invalido
+                                    </div>
+                            </div>
+                            <button type="submit" class="btn float-right" id="bcompra">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL REGISTRO-->
+    <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header fondo-nav">
+                    <a class="navbar-brand"><img src="img/navbar/Game_Development-512.png" alt="Mercado Minero"
+                            width="260"></a>
+                    <button type="button" id="invertir" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="validar(event)">
+                        <div class="row">
+                            <h3 class="px-4 mr-auto">REGISTRARSE</h3>
+                            <a href="#" data-toggle="modal" data-target="#modalLogin" data-dismiss="modal"
+                                aria-label="Close" class="text-dark lead ml-auto px-4">Login</a>
+                        </div>
+                        <div class="form-group rounded mb-3">
+                            <input type="text" placeholder="&#xf007;  Nombre de usuario" class="form-control inputModales" id="usuario-registro" onblur="revisar(this)" onkeyup="revisar(this)">
+                            <div class="invalid-feedback">
+                                Ingrese un usuario.
+                            </div>
+                        </div>
+                        <div class="form-group rounded mb-3">
+                            <input type="email" placeholder="&#xf0e0;  Correo electrónico" class="form-control inputModales" id="email-registro" onblur="revisarMail(this)">
+                            <div class="invalid-feedback">
+                                Error formato de mail.
+                            </div>
+                        </div>
+                        <div class="form-group rounded mb-3">
+                            <input type="email" placeholder="&#xf0e0;  Confirma tu correo electrónico" class="form-control inputModales" id="mailRegistro2" onblur="confirmarMail(this)">
+                            <div class="invalid-feedback">
+                                Las direcciones de mail No coinciden.   
+                            </div>
+                        </div>
+                        <div class="form-group rounded mb-3">
+                            <input type="password" placeholder="&#xf023;  Contraseña" class="form-control inputModales"  id="contrasena-registro"
+                            onblur="revisarLongitud(this)">
+                            <div class="invalid-feedback">
+                                Ingrese una contraseña de al menos 8 digitos.
+                            </div>
+                         </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input"  id="terminos-registro" onblur="verificarCheckbox(this)">
+                            <label class="form-check-label" for="exampleCheck1">Acepto los Términos de Uso, Términos de
+                                Venta y la Política de Privacidad de Rolling Games.</label>
+                                <div class="invalid-feedback">
+                                    Para continuar debe aceptar los terminos y condiciones.
+                                </div>
+                        </div>
+                        <button type="submit" class="btn float-right" id="botonesModal">Crear cuenta de Rolling Games</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
